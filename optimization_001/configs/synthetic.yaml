@@ -1,0 +1,29 @@
+seed: 42
+cpu_threads: 4
+data:
+  root: data/synthetic
+  manifest: data/synthetic/manifest.jsonl
+  pairs: data/synthetic/pairs.jsonl
+  image_size: 64
+model:
+  channels: 32
+  image_pretrained: false
+  text_mode: debug_hash
+sampler:
+  queries: 4
+  pairs_per_step: 1
+loss:
+  lambda_geometry: 1.0
+  lambda_swap: 0.1
+  margin: 0.2
+  temperature: 0.25
+train:
+  max_steps: 2
+  lr: 0.0003
+  weight_decay: 0.0001
+  amp: false
+  warmup_steps: 1
+  log_every: 1
+  validate_every: 1
+  snapshot_every: 10
+

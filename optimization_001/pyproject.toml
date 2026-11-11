@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swapgrasp"
+version = "0.1.0"
+description = "Language-conditioned planar grasp detection with paired prompt ranking"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.3", "torchvision>=0.18", "numpy>=1.26,<2.3", "Pillow", "PyYAML", "opencv-python-headless", "matplotlib", "tensorboard", "open_clip_torch>=2.24", "requests"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["swapgrasp*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

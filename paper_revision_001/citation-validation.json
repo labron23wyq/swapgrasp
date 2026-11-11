@@ -1,0 +1,21 @@
+{
+  "filepath": "output\\language-driven-grasp-research\\submission-final\\paper-revision-001\\references.bib",
+  "total_entries": 3,
+  "valid_entries": 3,
+  "errors": [],
+  "warnings": [],
+  "duplicates": [],
+  "venue_standard_checked": null,
+  "min_count_checked": null,
+  "manuscript_results": {
+    "checked": true,
+    "manuscript_filepath": "output\\language-driven-grasp-research\\submission-final\\paper-revision-001\\paper.tex",
+    "cited_keys": [
+      "VanVo2024language",
+      "Vuong2024language",
+      "Tziafas2023language"
+    ],
+    "missing_keys": [],
+    "unused_keys": []
+  }
+}

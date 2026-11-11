@@ -1,0 +1,24 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/
+runs/
+artifacts/
+logs/
+*.egg-info/
+third_party/
+weights/
+
+# Local credentials and TeX build products
+.env
+.env.*
+*.pem
+*.key
+*.aux
+*.bbl
+*.blg
+*.brf
+*.log
+*.out
+

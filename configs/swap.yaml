@@ -1,0 +1,31 @@
+seed: 42
+data:
+  root: data/processed
+  manifest: data/processed/manifest.jsonl
+  pairs: data/processed/train_pairs.jsonl
+  image_size: 320
+model:
+  channels: 128
+  image_pretrained: true
+  image_weights_path: weights/resnet18-f37072fd.pth
+  text_mode: clip
+  text_model: ViT-B-32
+  text_pretrained: weights/clip-vit-b32-openai.bin
+sampler:
+  queries: 8
+  pairs_per_step: 2
+loss:
+  lambda_geometry: 1.0
+  lambda_swap: 0.1
+  margin: 0.2
+  temperature: 0.25
+train:
+  max_steps: 10000
+  lr: 0.0003
+  weight_decay: 0.0001
+  amp: true
+  warmup_steps: 500
+  log_every: 20
+  validate_every: 500
+  snapshot_every: 2000
+
